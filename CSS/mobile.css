@@ -1,0 +1,144 @@
+/* Smartphones (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2vh;
+    grid-template-areas:
+      "header"
+      "content-left"
+      "content-right"
+      "footer";
+    width: 100%;
+  }
+
+  #header,
+  #content-left,
+  #content-right {
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  .header-main {
+    font-size: 1.5rem;
+  }
+
+  .header-sub {
+    font-size: 1rem;
+  }
+
+  .header-para {
+    font-size: 1rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .price-container {
+    margin-bottom: 1rem;
+  }
+
+  #content-left p {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}
+
+/* Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2vh;
+    grid-template-areas:
+      "header"
+      "content-left"
+      "content-right"
+      "footer";
+    width: 100%;
+  }
+
+  #header,
+  #content-left,
+  #content-right {
+    padding: 2rem;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .header-main,
+  h2 {
+    font-size: 2rem;
+  }
+
+  .header-para {
+    font-size: 1rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .price-container {
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .btn-main {
+    width: 70%;
+  }
+}
+
+/* Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1.5vh;
+    grid-template-areas:
+      "header"
+      "content-left"
+      "content-right"
+      "footer";
+    width: 100%;
+  }
+
+  #header,
+  #content-left,
+  #content-right {
+    padding: 3rem;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .header-main,
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .header-sub {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .header-para {
+    font-size: 1.5rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  .price-container {
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .btn-main {
+    width: 70%;
+  }
+
+  /* Content Right */
+  .why-us-list {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "karla", Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: lightgray;
+}
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 8vh;
+  grid-template-areas:
+    "header header"
+    "content-left content-right"
+    "footer footer";
+  max-width: 1440px;
+  width: 65%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* Header */
+#header {
+  background-color: white;
+  grid-area: header;
+  padding: 3rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.header-main {
+  color: #2ab2af;
+}
+
+.header-sub {
+  margin-bottom: 0.5rem;
+  color: #bfdf32;
+}
+
+.header-para {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #a3a7b0;
+}
+
+/* Bottom Content */
+
+/* Content Left */
+#content-left {
+  grid-area: content-left;
+  padding: 3rem;
+  color: #eee;
+  background: #2bb3b1;
+  border-bottom-left-radius: 8px;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-right: 1rem;
+}
+
+.per-month {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #74e0e2;
+}
+
+#content-left p {
+  font-size: 1.3rem;
+}
+
+.btn-main {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  border-radius: 7px;
+  margin-top: 2.5rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 00;
+  background-color: #bfdf32;
+  box-shadow: 3px 3px 8px 0.25px #09a195;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background-color: #b6d42f;
+}
+
+/* Content Right */
+#content-right {
+  grid-area: content-right;
+  padding: 3rem;
+  color: #eee;
+  background: #4abebd;
+  border-bottom-right-radius: 8px;
+}
+
+.why-us-list {
+  list-style: none;
+  color: #a0eff6;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
